@@ -1,0 +1,10 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "chat/queries"
+    schema: "chat/schemas"
+    gen:
+      go:
+        package: "chatdb"
+        out: "chatdb"
+        sql_package: "pgx/v5"

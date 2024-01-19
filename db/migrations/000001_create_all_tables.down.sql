@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS messages;
+DROP TABLE IF EXISTS membership;
+DROP TABLE IF EXISTS channel;
+DROP TYPE IF EXISTS channeltype;
+DROP EXTENSION IF EXISTS "uuid-ossp";

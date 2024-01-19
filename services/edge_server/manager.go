@@ -131,7 +131,6 @@ func (m *Manager) removeClient(client *Client) {
 }
 
 func (m *Manager) sendNotification() {
-	defer m.TryRLock()
 	for {
 		msg, err := m.pubsub.ReceiveMessage(context.Background())
 		if err != nil {
